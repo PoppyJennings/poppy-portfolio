@@ -80,6 +80,11 @@ body {
   transform: translateY(-50%);
   transition: transform calc(var(--d) * 2) var(--e);
 }
+
+#cardOne {
+  background-image: url(../../images/hubbly.png);
+}
+
 .card:nth-child(1):before {
   background-image: url(../../images/hubbly.png);
 }
