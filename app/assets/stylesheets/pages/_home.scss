@@ -51,6 +51,12 @@ i {
   width: 50%;
 }
 
+@media(max-width: 991px) {
+  .right {
+    width: 100%;
+  }
+}
+
 .first-row {
   display:flex;
   align-self: center;
