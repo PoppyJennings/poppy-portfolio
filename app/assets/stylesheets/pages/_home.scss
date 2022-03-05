@@ -56,7 +56,6 @@ i {
   0% {
       transform: translateX(-100%);
   }
-
   100% {
       transform: translateX(0);
   }
@@ -71,42 +70,18 @@ i {
   0% {
       transform: translateX(100%);
   }
-
   100% {
       transform: translateX(0);
   }
 }
 
-
-
 @media(max-width: 991px) {
-  .right {
+  .right, .left {
     width: 100%;
   }
 }
 
-.first-row {
-  display:flex;
-  align-self: center;
-  justify-content: space-evenly;
-  padding-bottom: 18px;
-}
-
-.second-row {
-  display:flex;
-  align-self: center;
-  justify-content: space-evenly;
-  padding-bottom: 18px;
-}
-
-.third-row {
-  display:flex;
-  align-self: center;
-  justify-content: space-evenly;
-  padding-bottom: 18px;
-}
-
-.forth-row {
+.icon-row {
   display:flex;
   align-self: center;
   justify-content: space-evenly;

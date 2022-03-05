@@ -1,5 +1,5 @@
 <div class="container text-center p-5">
-<%#= HEADER SECTION  %>
+  <%#= HEADER SECTION  %>
   <div class="header py-5">
     <h1>Hi, I'm Poppy</h1>
     <div class="scrollText">
@@ -9,64 +9,56 @@
     </div>
   </div>
 
-<%#= TOP SECTION CLASS  %>
-<div class="row top-section d-flex">
-  <div class="left text-left col-12 col-lg-6">
-    <div class="spacer my-3 col-12 col-lg-6">
+  <%#= LEFT  %>
+  <div class="row top-section d-flex">
+    <div class="left my-3">
       <h2>About me</h2>
+      <div class="text-left my-3">
+        <p>The desire to know how web apps are created, integrated and scaled led me to a coding Bootcamp where I transitioned from digital marketer to full-stack web developer.</p>
+        <p>Maintaining the skills of communication, coordination and prioritisation perfected throughout my marketing career and combining them with my newfound passion for creating SEO friendly, technically clean websites that keep the user experience at the core of my projects.</p>
+        <p>I am continually building my skill set and tech stack and love consulting with clients to help them define and achieve their digital goals. I'm seeking a new, challenging position where I can grow as part of an innovative, international team.</p>
+      </div>
     </div>
-      <p>The desire to know how web apps are created, integrated and scaled led me to a coding bootcamp where I transitioned from digital marketer to full-stack web developer.</p>
-      <p>Maintaining the skills of communication, coordination and prioritisation honed in my marketing career and combining them with my new found passion for adding flair to websites with JS/Stimulus, I keep the user experience at the forefront of my projects.</p>
-      <p>I am keen to build my skills and learn more in order to help clients define and achieve their digital goals.</p>
-  </div>
 
-  <div class="right text-center">
-    <div class="spacer my-3">
+  <%# RIGHT %>
+    <div class="right text-center my-3">
       <h2>My stack</h2>
-    </div>
-    
-    <div class="icons">
-      <div class="first-row">
-        <i class="fab fa-html5"></i>
-        <i class="fab fa-css3-alt"></i>
-        <i class="fab fa-js-square"></i>
-      </div>
-      
-      <div class="second-row">
-        <div id="ruby"><%= image_tag "ruby.png", alt: "", width: 50 %></div>
-        <div id="rails"><%= image_tag "rails.png", alt: "", width: 50 %></div>
-        <i class="fab fa-wordpress"></i>
-        <div id="postgres"><%= image_tag "pg2.png", alt: "", width: 50 %></div>
-        <i class="fas fa-database"></i>
-      </div>
-
-      <div class="third-row">
-        <i class="fab fa-sass"></i>    
-        <div id="ui"><%= image_tag "ui.png", alt: "", width: 50 %></div>
-        <div id="ux"><%= image_tag "ux.png", alt: "", width: 50 %></div>
-        <i class="fab fa-figma"></i>
-        <i class="fab fa-bootstrap"></i>
-      </div>
-      
-      <div class="forth-row">
-        <i class="fab fa-github"></i>
-        <i class="fab fa-git-square"></i>
-        <i class="fab fa-trello"></i>
-        <i class="fab fa-slack"></i>
+      <div class="icons my-3">
+        <div class="icon-row">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-js-square"></i>
+        </div>
+        <div class="icon-row">
+          <div id="ruby"><%= image_tag "ruby.png", alt: "", width: 50 %></div>
+          <div id="rails"><%= image_tag "rails.png", alt: "", width: 50 %></div>
+          <i class="fab fa-wordpress"></i>
+          <div id="postgres"><%= image_tag "pg2.png", alt: "", width: 50 %></div>
+          <i class="fas fa-database"></i>
+        </div>
+        <div class="icon-row">
+          <i class="fab fa-sass"></i>    
+          <div id="ui"><%= image_tag "ui.png", alt: "", width: 50 %></div>
+          <div id="ux"><%= image_tag "ux.png", alt: "", width: 50 %></div>
+          <i class="fab fa-figma"></i>
+          <i class="fab fa-bootstrap"></i>
+        </div>
+        <div class="icon-row">
+          <i class="fab fa-github"></i>
+          <i class="fab fa-git-square"></i>
+          <i class="fab fa-trello"></i>
+          <i class="fa-brands fa-slack"></i>
+        </div>
       </div>
     </div>
   </div>
+
+  <%#= CAROUSEL  %>
+  <div class="m-5">
+    <h2>My projects</h2>
+  </div>
+  <%= render 'card' %>
+
+  <%#= FOOTER  %>
+  <%= render 'footer' %>
 </div>
-
-<%#= CAROUSEL  %>
-
-<div class="spacer m-5">
-  <h2>My projects</h2>
-</div>
-
-<%= render 'card' %>
-<%#= FOOTER  %>
-
-<%= render 'footer' %>
-
-</div> <%#= Closes the container div from line 1 %>

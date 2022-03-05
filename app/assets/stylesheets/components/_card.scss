@@ -2,8 +2,6 @@
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  // --font-sans: "Rubik", sans-serif;
-  // --font-serif: "Cardo", serif;
 }
 
 * {
@@ -63,9 +61,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 110%;
+  height: 100%;
   background-size: cover;
-  background-position: 0 0;
+  background-position: center top;
   transition: transform calc(var(--d) * 1.5) var(--e);
   pointer-events: none;
 }
@@ -84,28 +82,33 @@ body {
 }
 
 .card:nth-child(1):before {
-  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618488314/Portfolio/hubbly_dmomlu.png);
+  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1646229861/Portfolio/amenitiz.png);
 }
 .card:nth-child(2):before {
-  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618488331/Portfolio/unichoices_exck4n.png);
+  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618488314/Portfolio/hubbly_dmomlu.png);
 }
-
 .card:nth-child(3):before {
-  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618568045/Portfolio/Wildflower_ridlcl.png);
+  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1646230950/Portfolio/unichoices_ayzxog.png);
 }
 .card:nth-child(4):before {
-  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618488314/Portfolio/iews_xex913.png);
+  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618569907/Portfolio/Portfolio_page.png);
 }
-
 .card:nth-child(5):before {
-  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618488315/Portfolio/grr_r0oeur.png);
+  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1646316099/Portfolio/freshpicks_k9past.png);
 }
 .card:nth-child(6):before {
-  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618569907/Portfolio/Portfolio_page_u4dns5.png);
+  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618568045/Portfolio/Wildflower_ridlcl.png);
+}
+.card:nth-child(7):before {
+  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1646231250/Portfolio/iews_vg5yvd.png);
+}
+.card:nth-child(8):before {
+  background-image: url(https://res.cloudinary.com/dwsfhweeg/image/upload/v1618488315/Portfolio/grr_r0oeur.png);
 }
 
 .content {
   position: relative;
+  top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,42 +121,9 @@ body {
   margin-top: 1rem;
 }
 
-// .title {
-//   font-size: 1.3rem;
-//   font-weight: bold;
-//   line-height: 1.2;
-// }
-
 .copy {
   color: white;
-  // font-family: var(--font-serif);
-  // font-size: 1.125rem;
-  // font-style: italic;
-  // line-height: 1.35;
  }
-
-
-// .btn {
-  // cursor: pointer;
-  // margin-top: 1.5rem;
-  // padding: 0.75rem 1.5rem;
-  // font-size: 0.65rem;
-  // font-weight: bold;
-  // letter-spacing: 0.025rem;
-  // text-transform: uppercase;
-  // color: white;
-  // background-color: black;
-  // border: none;
-// }
-
-// .btn:hover {
-//   background-color: #0d0d0d;
-// }
-
-// .btn:focus {
-//   outline: 1px dashed yellow;
-//   outline-offset: 3px;
-// }
 
 @media (hover: hover) and (min-width: 600px) {
   .card:after {
